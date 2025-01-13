@@ -2192,8 +2192,6 @@ int ventoy_fill_data(grub_uint32_t buflen, char *buffer)
     puint[0] = grub_swap_bytes32(0x56544c45);
     fmt3 = ventoy_get_env(name);
 
-    grub_memcpy(guidstr, &guid, sizeof(guid));
-
     puint2[0] = grub_swap_bytes32(g_ventoy_plat_data);    
 
     /* Easter egg :) It will be appreciated if you reserve it, but NOT mandatory. */
