@@ -2202,7 +2202,7 @@ int ventoy_fill_data(grub_uint32_t buflen, char *buffer)
     len = grub_snprintf(buffer, buflen, fmtcode, 
                         fmt1 ? fmt1 : fmtdata, 
                         fmt2 ? fmt2 : fmtdata + 4, 
-                        value ? value : "", plat, 
+                        value ? value : "", plat, guidstr, 
                         fmt3 ? fmt3 : fmtdata + 6);
     #pragma GCC diagnostic pop
 
